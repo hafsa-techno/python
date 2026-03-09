@@ -1,7 +1,10 @@
-def ft_hello_garden():
+def s():
     print("Hello, Garden Community!")
 
-def main():
-    ft_hello_garden()
-if __name__ == "__main__":
-    main()
+# def ichraq():
+    # ft_hello_garden()
+#dat use
+#dat image 
+#blaokced
+# if __name__ == "__main__":
+#     ichraq()
