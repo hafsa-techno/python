@@ -36,12 +36,6 @@ def main():
     print ("Unpacking demonstration:")
     print (f"Player at x={x2}, y={y2}, z={z2}")
     print (f"Coordinates: X={x2}, Y={z2}, Z={z2}")
-    thisdict =	{
-    "brand": "Ford",
-    "year": 1964,
-    "model": "Mustang"
-    }
-    print(thisdict)
 
 if __name__ == "__main__":
     main()
