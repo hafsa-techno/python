@@ -70,7 +70,7 @@ def infinite_gen(n) -> Generator[dict, None, None]:
             yield {"id": count, **item}
             count += 1
 
-def main():
+def game_events():
     print ("Processing 1000 game events...")
     total_event = 0
     high_level = 0
@@ -97,7 +97,58 @@ def main():
     gap = end_time - start_time
     print (f"Processing time: {gap:.3f} seconds")
 
-    print ("\n=== Generator Demonstration ===")
+def fibonacci(n):
+    i = 2
+    prev_prev = 0
+    prev = 1
+    current = 0
+    while i <= n:
+        current = prev + prev_prev
+        prev_prev = prev
+        prev = current
+        i += 1
+    return (current)
 
+def fibonacci_infinite_gen(n) ->Generator[int, None, None]:
+    i = 0
+    while i < n:
+        yield fibonacci(i)
+        i += 1
+
+def is_prime(n):
+    if (n < 2):
+        return False
+    i = 2
+    while (i < n):
+        if (n % i == 0):
+            return False
+        i += 1
+    return True
+
+def prime_generate_infinte(n) -> Generator[int, None, None]:
+    i = 0
+    while (i < n):
+        if (is_prime(i)):
+            yield i
+        i += 1
+
+def main():
+    game_events()
+
+    print ("\n=== Generator Demonstration ===")
+    n = 10
+    print (f"Fibonacci sequence (first {n}): ", end="")
+    count = 0
+    for item in fibonacci_infinite_gen(n):
+        print (item, end="")
+        if (count != n - 1):
+            print (", ", end="")
+        count += 1
+    print ("\n")
+    n = 5
+    print (f"Prime numbers (first {n}) ", end="")
+    for item in prime_generate_infinte(n):
+        print (item, end=" ")
+    print ("\n")
 if __name__ == "__main__":
     main()
