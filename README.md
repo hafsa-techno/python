@@ -20,8 +20,6 @@
 
 It teaches **Python programming** from fundamentals (Modules 00–05) to advanced topics (Module 42) through exercises and projects.  
 
-By the end of the cursus, students will be able to write **structured, modular, and object-oriented Python code**, handle files, exceptions, and external packages.
-
 ---
 
 # Modules
