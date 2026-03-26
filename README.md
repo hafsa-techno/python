@@ -1,6 +1,6 @@
 <div align="center">
 
-  # Python Cursus: Modules 00–05 & 42
+  # Python Cursus: Modules 00–05
 
 ### Python learning journey from basics to advanced topics
 
